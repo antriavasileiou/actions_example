@@ -8,6 +8,7 @@ jobs:
       - run: echo "this is job 1"
   Job2:
     runs-on: ubuntu-latest
+    needs: Job1
     steps:
       - run: echo "this is job 2"
       
