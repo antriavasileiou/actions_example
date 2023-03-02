@@ -1,0 +1,13 @@
+name: Demo
+run-name: ${{github.actor}} is testing the Demo workflow
+on: [push]
+jobs:
+  Job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is job 1"
+  Job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is job 2"
+      
